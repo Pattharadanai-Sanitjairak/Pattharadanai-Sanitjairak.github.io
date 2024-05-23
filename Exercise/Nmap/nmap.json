@@ -1,0 +1,54 @@
+[
+    {
+        "Question":"Nmap argument for 'no port scan'.",
+        "Answer":["-sP","-sn"]
+    },
+    {
+        "Question":"Nmap argument for providing more debug information about sending packets.",
+        "Answer":["--packet-trace"]
+    },
+    {
+        "Question":"Nmap argument to disable ARP discovery packet to be utilized.",
+        "Answer":["--disable-arp-ping","-send-ip"]
+    },
+    {
+        "Question":"Nmap argument for TCP SYN Ping Scan.",
+        "Answer":["-PS"]
+    },
+    {
+        "Question":"Nmap argument for ACK Ping Scan.",
+        "Answer":["-PA"]
+    },
+    {
+        "Question":"Nmap argument for ICMP Echo Ping Scan.",
+        "Answer":["-PE"]
+    },
+    {
+        "Question":"Nmap argument for ICMP Address Mask Scan.",
+        "Answer":["-PM"]
+    },
+    {
+        "Question":"Nmap argument for ICMP Echo Timestamp Scan.",
+        "Answer":["-PP"]
+    },
+    {
+        "Question":"Nmap for UDP Ping Scan.",
+        "Answer":["-PU"]
+    },
+    {
+        "Question":"Nmap argument for IP Ping Scan.",
+        "Answer":["-PO"]
+    },
+    {
+        "Question":"Nmap argument for ARP Scan.",
+        "Answer":["-PR"]
+    },
+    {
+        "Question":"Nmap argument for SCTP INIT Ping Scan",
+        "Answer":["-PY"]
+    },
+    {
+        "Question":"Nmap argument for traceroute",
+        "Answer":["--traceroute"]
+    }
+]

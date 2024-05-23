@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="ExerciseController">
+<head>
+    <title>Nmap Exercise</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <span>Nmap Exercise</span>
+    </div>
+    <div id="body">
+
+        <h1><span>{{ question }}<span></h1>
+        <input placeholder="Answer Here" id="answer-input" type="text" ng-model="userAnswer" ng-keypress="onKeyPress($event)">
+        <button id="answer-button" ng-click="checkAnswer()">Submit</button>
+        <p id="answer-result" ng-show="showResult">{{ result }}</p>
+    </div>
+    <div id="footer">
+        <span>Made by Pattharadanai</span>
+        <a href="https://github.com/Pattharadanai-Sanitjairak" id="github-link"><i class="fa fa-github"></i></a>
+    </div>
+    <script src="../exercise.js"></script>
+</body>
+</html>
