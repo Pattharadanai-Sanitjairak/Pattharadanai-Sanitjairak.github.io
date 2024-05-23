@@ -41,6 +41,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size:36px;
 }
 
 #footer{
@@ -90,4 +91,34 @@ body {
 
 #answer-result{
     font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    #footer{
+        justify-content: center;
+    }
+
+    #body h1{
+        width: 80vw;
+        height: 20vh;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-size:24px;
+    }
+
+    #header {
+        font-size: 36px;
+    }
+
+    #answer-input {
+        width: 80vw;
+        padding: 5px 20px;
+        font-size: 16px;
+    }   
+
+    #answer-button {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
 }
