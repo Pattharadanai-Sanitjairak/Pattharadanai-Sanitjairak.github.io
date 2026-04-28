@@ -1,0 +1,16 @@
+[
+    {
+        "category": "Placeholder 1",
+        "links": [
+            { "name": "Placeholder 1-1", "url": "#" },
+            { "name": "Placeholder 1-2", "url": "#" }
+        ]
+    },
+    {
+        "category": "Placeholder 2",
+        "links": [
+            { "name": "Placeholder 2-1", "url": "#" },
+            { "name": "Placeholder 2-2", "url": "#" }
+        ]
+    }
+]

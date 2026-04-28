@@ -1,0 +1,205 @@
+[
+    {
+        "title": "CompTIA Security+",
+        "date": "October 2023",
+        "cost": "$365",
+        "icon": "https://images.credly.com/size/680x680/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob",
+        "desc": "Earners of the CompTIA Security+ certification have the knowledge and skills necessary to perform core security functions required of any cybersecurity role."
+    },
+    {
+        "title": "CompTIA Pentest+",
+        "date": "April 2024",
+        "cost": "$400",
+        "icon": "https://images.credly.com/size/680x680/images/c7ac176b-15a3-4726-827a-e8cee8fe44dc/blob",
+        "desc": "Earners of the CompTIA PenTest+ certification have the knowledge and skills necessary to perform hands-on penetration testing to identify, exploit, report and manage vulnerabilities on a network."
+    },
+    {
+        "title": "CompTIA Network Vulnerability Assessment Professional (CNVP)",
+        "date": "April 2024",
+        "cost": "$0",
+        "icon": "https://images.credly.com/size/680x680/images/3eaf80a9-a69a-480a-a98b-e9a91796d6cb/CompTIA_CNVP.png",
+        "desc": "Earners of CompTIA Network Vulnerability Assessment Professional (CNVP) certification have the knowledge and skills required to scan applications and systems to identify vulnerabilities that can be used as a blueprint for improvements."
+    },
+    {
+        "title": "AWS Certified Cloud Practitioner",
+        "date": "May 2024",
+        "cost": "$100",
+        "icon": "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+        "desc": "Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud."
+    },
+    {
+        "title": "OffSec Certified Professional (OSCP)",
+        "date": "August 2024",
+        "cost": "$1749",
+        "icon": "https://images.credly.com/size/680x680/images/ec81134d-e80b-4eb5-ae07-0eb8e1a60fcd/image.png",
+        "desc": "An OSCP has demonstrated the ability to use persistence, creativity, and perceptiveness to identify vulnerabilities and execute organized attacks under tight time constraints."
+    },
+    {
+        "title": "CREST Practitioner Security Analyst (CPSA)",
+        "date": "August 2024",
+        "cost": "$400",
+        "icon": "https://images.credly.com/size/680x680/images/47d8681c-da37-42b5-895e-c90ca4636442/blob",
+        "desc": "Earners of the CREST Practitioner Security Analyst (CPSA) certification badge have knowledge in assessing operating systems and common network services."
+    },
+    {
+        "title": "CREST Registered Penetration Tester (CRT)",
+        "date": "September 2024",
+        "cost": "$150",
+        "icon": "https://images.credly.com/size/680x680/images/47d8681c-da37-42b5-895e-c90ca4636442/blob",
+        "desc": "Earners of the CREST Registered Penetration Tester (CRT) certification badge are able to find known vulnerabilities across common networks, applications, infrastructure and databases. "
+    },
+    {
+        "title": "CompTIA CySA+",
+        "date": "October 2024",
+        "cost": "$400",
+        "icon": "https://images.credly.com/size/680x680/images/dcd99b5b-da24-40a6-9364-62126d590c37/blob",
+        "desc": "Earners of the CompTIA Cybersecurity Analyst (CySA+) certification have the skills and knowledge to perform incident detection, prevention and response through continuous security monitoring."
+    },
+    {
+        "title": "CompTIA Network Security Professional (CNSP)",
+        "date": "October 2024",
+        "cost": "$0",
+        "icon": "https://images.credly.com/size/680x680/images/6f68e302-2193-4cbc-b2d9-50541a130ffa/CompTIA_CNSP.png",
+        "desc": "Earners of the CompTIA Network Security Professional (CNSP) have the knowledge and skills required to monitor networks for threats or unauthorized users as well as analyze security risks and develop response procedures."
+    },
+    {
+        "title": "CompTIA Security Analytics Professional (CNSP)",
+        "date": "October 2024",
+        "cost": "$0",
+        "icon": "https://images.credly.com/size/680x680/images/ba1b8072-8ebe-432c-88e5-05bc809c624a/CompTIA_CSAP.png",
+        "desc": "Earners of the CompTIA Security Analytics Professional (CSAP) are security analytics professionals that have the ability to plan and carry out security measures to protect an organization’s computer networks and systems."
+    },
+    {
+        "title": "Certified Red Team Professional (CRTP)",
+        "date": "November 2024",
+        "cost": "$249",
+        "icon": "https://static.wixstatic.com/media/470c31_f89db457309f4d3caa31f94458441a8f~mv2.png",
+        "desc": "A certification holder has the skills to understand and assess security of an Active Directory environment."
+    },
+    {
+        "title": "Security Analyst Level 1 (SAL1)",
+        "date": "March 2025",
+        "cost": "$349",
+        "icon": "https://images.credly.com/size/680x680/images/fc0df734-6716-45ba-8563-9fd0eba18373/blob",
+        "desc": "The Security Analyst Level 1 (SAL1) certification is a hands-on, practical certification that validates entry-level SOC analyst skills in threat detection, triage, and incident response using real-world scenarios."
+    },
+    {
+        "title": "AWS Certified Solution Architect - Associate",
+        "date": "April 2025",
+        "cost": "$150",
+        "icon": "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
+        "desc": "Earners of this certification have a comprehensive understanding of AWS services and technologies."
+    },
+    {
+        "title": "Burp Suite Certified Practitioner (BSCP)",
+        "date": "April 2025",
+        "cost": "$99",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BurpSuite_Comunity_Edition.svg/1280px-BurpSuite_Comunity_Edition.svg.png",
+        "desc": "Successfully passing the Burp Suite Certified Practitioner exam indicates a high-level proficiency in web security testing. It is aimed at penetration testers, and the organizations that employ them."
+    },
+    {
+        "title": "AWS Certified Security - Specialty",
+        "date": "May 2025",
+        "cost": "$300",
+        "icon": "https://images.credly.com/size/680x680/images/53acdae5-d69f-4dda-b650-d02ed7a50dd7/image.png",
+        "desc": "Earners of this certification have an in-depth understanding of AWS security services and the shared responsibility model (between AWS and the customer)."
+    },
+    {
+        "title": "CompTIA SecurityX",
+        "date": "June 2025",
+        "cost": "$450",
+        "icon": "https://images.credly.com/size/680x680/images/5343b652-c9a0-418e-bfaf-7ed5a2ddd0c4/blob",
+        "desc": "The CompTIA SecurityX certification is an advanced-level cybersecurity certification covering technical skills in security architecture and senior security engineering in cloud, on premises and hybrid environments. "
+    },
+    {
+        "title": "CompTIA Security Analytics Expert (CSAE)",
+        "date": "June 2025",
+        "cost": "$0",
+        "icon": "https://images.credly.com/size/680x680/images/93d16d4a-223f-41bd-aaad-6a491b7b1fa8/CompTIA_CSAE.png",
+        "desc": "Earners of the CompTIA Security Analytics Expert (CSAE) certification are security analytics experts that have demonstrated the skills and knowledge required to conceptualize, engineer and architect cybersecurity solutions, achieve regulatory compliance, and generate research results for cybersecurity based on data analytics."
+    },
+    {
+        "title": "CompTIA Secure Infrastructure Expert (CSIE)",
+        "date": "June 2025",
+        "cost": "$0",
+        "icon": "https://images.credly.com/size/680x680/images/4e8cb067-ff0a-4b3e-bf5d-7290ba25d0d6/CompTIA_CSIE.png",
+        "desc": "Earners of the CompTIA Secure Infrastructure Expert (CSIE) certification have the knowledge and skills required to effectively conceptualize, architect, engineer, test, analyze, manage and lead information security infrastructure and cybersecurity projects to meet the Governance, Risk and Compliance (GRC) needs of global enterprise-level organizations."
+    },
+    {
+        "title": "Certified Blockchain Practitioner (CBP)",
+        "date": "June 2025",
+        "cost": "$20",
+        "icon": "https://pentestingexams.com/wp-content/uploads/2021/11/cert-stamp-cbp.webp",
+        "desc": "Certified Blockchain Practitioner (CBP) is an entry-level exam to test candidates’ knowledge on the core concepts of blockchain and its various implementations."
+    },
+    {
+        "title": "Jr Penetration Tester (PT1)",
+        "date": "July 2025",
+        "cost": "$297",
+        "icon": "https://images.credly.com/size/680x680/images/54525e33-85d1-405c-a68c-1e4dd9c7f57f/blob",
+        "desc": "The Jr Penetration Tester (PT1) certification is a hands-on, practical exam designed to validate the skills of aspiring and junior pentesters. "
+    },
+    {
+        "title":"Mobile Application Penetration Tester (eMAPT)",
+        "date": "August 2025",
+        "cost": "$399",
+        "icon": "https://us-east-1.graphassets.com/AwCYQkwjSUCbfkm08Ct1Mz/cmcc4862vfy6r07k5un8lsi68",
+        "desc": "eMAPT is a hands-on, professional certification that proves your ability to assess, exploit, and report vulnerabilities in real-world mobile applications across both Android and iOS platforms."
+    },
+    {
+        "title":"Web Application Penetration Tester eXtreme (eWPTX)",
+        "date": "October 2025",
+        "cost": "$399",
+        "icon": "https://us-east-1.graphassets.com/AwCYQkwjSUCbfkm08Ct1Mz/cmcc5eg89gvu907k5ns96lqlz",
+        "desc": "The eWPTX is our most advanced web application penetration testing certification. This 100% practical and highly respected certification validates the advanced skills necessary to conduct in-depth penetration tests on modern web applications."
+    },
+    {
+        "title":"Certified Threat Hunting Professional",
+        "date": "October 2025",
+        "cost": "$399",
+        "icon": "https://us-east-1.graphassets.com/AwCYQkwjSUCbfkm08Ct1Mz/cmcc3k3loazi006k52vly6jlo",
+        "desc": "eCTHP is a professional-level certification that proves your threat hunting and threat identification capabilities. Students are tested through real-world scenarios modeled after cutting-edge malware that simulates corporate network vulnerabilities."
+    },
+    {
+        "title":"Hack The Box Certified Penetration Testing Specialist (HTB CPTS)",
+        "date": "November 2025",
+        "cost": "$490",
+        "icon": "https://images.credly.com/size/680x680/images/e63aa507-b974-4e67-bae6-1e425f6e2a99/image.png",
+        "desc": "HTB CPTS holders will possess technical competency in the ethical hacking and penetration testing domains at an intermediate level. "
+    },
+    {
+        "title":"Certified Red Team Expert (CRTE)",
+        "date": "November 2025",
+        "cost": "$299",
+        "icon": "https://static.wixstatic.com/media/470c31_7ac13e0fb6034710be19736cd9dd476b~mv2.jpg",
+        "desc": "A certification holder has the expertise to assess security of an enterprise windows infrastructure having multiple domains & forests by just abusing the functionality & trusts."
+    },
+    {
+        "title": "Offensive Security Web Expert (OSWE)",
+        "date": "January 2026",
+        "cost": "$1749",
+        "icon": "https://images.credly.com/size/680x680/images/0a375324-4f9e-412d-b276-b6e96c428709/image.png",
+        "desc": "Certified OSWEs have a clear and practical understanding of white box web application assessment and security."
+    },
+    {
+        "title": "Certified Android Penetration Tester (CAPT)",
+        "date": "February 2026",
+        "cost": "$240",
+        "icon": "https://lwfiles.mycourse.app/63942c32c9a203516ce07c09-public/429ba75a46e35617a38442d02f925770.png",
+        "desc": "Full Free Android Application Security to become an Certified Android Penetration Tester (CAPT)."
+    },
+    {
+        "title": "Certified Red Team Master (CRTM)",
+        "date": "March 2026",
+        "cost": "$399",
+        "icon": "https://static.wixstatic.com/media/470c31_ba28f3e73da843c2b0664dd02b61f9b9~mv2.png",
+        "desc": "The 48-hour hands-on exam tests students' ability to apply both attack and defense concepts."
+    },
+    {
+        "title": "OffSec Experienced Penetration Tester (OSEP)",
+        "date": "April 2026",
+        "cost": "$1749",
+        "icon": "https://images.credly.com/size/680x680/images/ebefd276-7f47-4aa8-b1d8-4a13636e4851/image.png",
+        "desc": "Offensive Security Experienced Penetration Testers (OSEPs) have the expertise necessary to conduct pentests against hardened systems."
+    }
+]
