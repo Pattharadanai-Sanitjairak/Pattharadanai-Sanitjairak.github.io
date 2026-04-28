@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pattharadanai Sanitjairak | PenTester Portfolio</title>
+    <title>Cybersecurity Portfolio</title>
     
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -27,100 +27,123 @@
             background-color: var(--bg); 
             color: var(--text-main); 
             line-height: 1.6;
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden;
         }
 
+        /* --- Header & Nav --- */
         header {
             position: fixed; top: 0; width: 100%;
-            background: rgba(15, 23, 42, 0.95);
+            background: rgba(15, 23, 42, 0.9);
             backdrop-filter: blur(12px); z-index: 1000;
             border-bottom: 1px solid var(--border);
         }
 
         nav {
-            max-width: 1100px; margin: 0 auto; padding: 0.8rem 1rem;
+            max-width: 1100px; margin: 0 auto; padding: 1rem;
             display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 10px;
         }
 
-        .logo { font-family: 'JetBrains Mono'; color: var(--primary); font-weight: 600; font-size: 0.85rem; }
+        .logo { font-family: 'JetBrains Mono'; color: var(--primary); font-weight: 600; font-size: 0.9rem; }
 
-        .nav-links { display: flex; list-style: none; gap: 1.2rem; align-items: center; }
+        .nav-links { display: flex; list-style: none; gap: 1.5rem; align-items: center; }
         .nav-links a, .dropbtn { 
             text-decoration: none; color: var(--text-dim); 
-            font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px;
+            font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;
             cursor: pointer; transition: 0.3s;
         }
         .nav-links a:hover, .dropdown:hover .dropbtn { color: var(--primary); }
 
+        /* --- Dropdowns --- */
         .dropdown { position: relative; }
         .dropdown-content {
             visibility: hidden; opacity: 0; position: absolute; 
             top: 100%; right: 0; background: var(--card-bg); 
-            min-width: 180px; border: 1px solid var(--border); 
+            min-width: 200px; border: 1px solid var(--border); 
             box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-            transition: 0.2s; z-index: 100;
+            transition: all 0.2s ease-in-out; transform: translateY(10px);
+            z-index: 100;
         }
-        .dropdown:hover .dropdown-content { visibility: visible; opacity: 1; }
+        .dropdown:hover .dropdown-content { visibility: visible; opacity: 1; transform: translateY(0); }
 
-        section { padding: 100px 1rem 40px; max-width: 800px; margin: 0 auto; }
+        .category-item { position: relative; border-bottom: 1px solid var(--border); }
+        .category-item span { display: block; padding: 12px; font-size: 0.8rem; color: var(--text-main); }
         
-        h1 { font-family: 'JetBrains Mono'; font-size: clamp(1.5rem, 7vw, 3rem); margin-bottom: 1rem; }
-        .name-tag { font-family: 'JetBrains Mono'; color: var(--primary); font-size: 0.8rem; }
+        .submenu {
+            visibility: hidden; opacity: 0; position: absolute; 
+            top: -1px; right: 100%; background: var(--card-bg); 
+            min-width: 180px; border: 1px solid var(--border); 
+        }
+        .category-item:hover .submenu { visibility: visible; opacity: 1; }
+        .submenu a { display: block; padding: 10px; color: var(--text-dim); text-decoration: none; font-size: 0.75rem; }
 
-        .timeline { position: relative; border-left: 2px solid var(--border); padding-left: 20px; margin-left: 10px; }
+        /* --- Sections --- */
+        section { padding: 120px 1.5rem 60px; max-width: 900px; margin: 0 auto; }
+        
+        .name-tag { font-family: 'JetBrains Mono'; color: var(--primary); font-size: 0.9rem; margin-bottom: 0.5rem; display: block; }
+        h1 { font-family: 'JetBrains Mono'; font-size: clamp(1.8rem, 8vw, 3.5rem); margin-bottom: 1.5rem; line-height: 1.1; }
+        
+        .intro-box { font-size: 1.1rem; color: var(--text-dim); border-left: 3px solid var(--border); padding-left: 20px; }
+        .philosophy { margin-top: 1.5rem; font-style: italic; color: var(--accent); font-family: 'JetBrains Mono'; font-size: 0.9rem; }
+        .highlight { color: var(--text-main); font-weight: 600; }
+
+        /* --- Timeline & Cards --- */
+        h2 { font-family: 'JetBrains Mono'; color: var(--primary); margin-bottom: 2.5rem; font-size: 1.5rem; }
+        .timeline { position: relative; border-left: 2px solid var(--border); padding-left: 30px; margin-left: 5px; }
         
         .cert-item {
-            position: relative; background: var(--card-bg); padding: 1rem;
+            position: relative; background: var(--card-bg); padding: 1.2rem;
             border-radius: 12px; border: 1px solid var(--border);
-            margin-bottom: 20px; display: flex; gap: 1rem; align-items: center;
+            margin-bottom: 25px; display: flex; gap: 1rem; align-items: flex-start;
+            transition: 0.3s ease;
         }
+        .cert-item:hover { border-color: var(--primary); transform: translateX(5px); }
         .cert-item::before {
-            content: ""; position: absolute; left: -31px; width: 12px; height: 12px;
-            background: var(--primary); border: 3px solid var(--bg); border-radius: 50%;
+            content: ""; position: absolute; left: -41px; top: 25px;
+            width: 14px; height: 14px; background: var(--primary); 
+            border: 3px solid var(--bg); border-radius: 50%;
         }
 
-        .icon-sq { width: 45px; height: 45px; flex-shrink: 0; }
+        .icon-sq { width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
         .icon-sq img { width: 100%; height: auto; }
+        .cert-title { font-weight: 600; font-size: 1rem; margin-bottom: 4px; }
+        .cert-meta { font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--accent); }
 
-        /* Fix for Stats/Money overflow */
+        .cert-item.future { border: 1px dashed var(--primary); background: rgba(56, 189, 248, 0.05); }
+        .cert-item.future::before { background: var(--bg); border: 3px solid var(--primary); }
+
+        /* --- Stats Box --- */
         .stats-box {
             background: linear-gradient(135deg, var(--card-bg), #0f172a);
-            padding: 1.5rem 1rem; border-radius: 12px; border: 1px solid var(--primary);
-            text-align: center; margin-top: 30px; width: 100%;
+            padding: 2rem; border-radius: 12px; border: 1px solid var(--primary);
+            text-align: center; margin-top: 40px;
         }
-        .stats-grid { 
-            display: flex; justify-content: space-evenly; gap: 10px; margin-top: 1rem; 
-        }
-        .stat-item { flex: 1; min-width: 0; } /* Allows shrinking */
-        .stat-val { 
-            font-size: clamp(1rem, 4vw, 1.6rem); 
-            color: var(--primary); font-weight: 600; 
-            font-family: 'JetBrains Mono';
-            word-wrap: break-word;
-        }
-        .stat-label { font-size: 0.6rem; color: var(--text-dim); text-transform: uppercase; display: block; }
+        .stats-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 1.5rem; }
+        .stat-val { font-size: 1.8rem; color: var(--primary); font-weight: 600; font-family: 'JetBrains Mono'; }
+        .stat-label { font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; display: block; }
 
-        /* Mobile Specific UI */
-        @media (max-width: 480px) {
-            nav { padding: 0.8rem 0.5rem; }
-            .logo { display: none; } /* Hide logo to save space for nav items on tiny screens */
+        /* --- Mobile Responsive Rules --- */
+        @media (max-width: 600px) {
             nav { justify-content: center; }
             .nav-links { gap: 1rem; }
-            
-            .cert-item { flex-direction: column; text-align: center; padding: 1.5rem 1rem; }
-            .icon-sq { width: 60px; height: 60px; margin-bottom: 0.5rem; }
-            
+            section { padding-top: 100px; }
+            .timeline { padding-left: 20px; }
+            .cert-item { flex-direction: column; align-items: center; text-align: center; }
+            .cert-item::before { left: -31px; }
             .stats-grid { flex-direction: column; gap: 1.5rem; }
+            .submenu { right: auto; left: 0; top: 100%; }
         }
 
-        footer { text-align: center; padding: 2rem 1rem; border-top: 1px solid var(--border); font-size: 0.7rem; opacity: 0.6; }
+        footer { text-align: center; padding: 3rem 1rem; border-top: 1px solid var(--border); font-family: 'JetBrains Mono'; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; }
+        .footer-links a { color: var(--text-main); text-decoration: none; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="logo">Bluedegard@TH:~#</div>
+            <div class="logo">Bluedegard@Thailand:~#</div>
             <ul class="nav-links">
                 <li><a href="#whoami">About</a></li>
                 <li><a href="#certs" id="nav-certs">Certs</a></li>
@@ -134,46 +157,53 @@
 
     <main>
         <section id="whoami">
-            <span class="name-tag">> WHOAMI</span>
+            <span class="name-tag">> WHOAMI /ALL</span>
             <h1>Pattharadanai Sanitjairak</h1>
-            <p style="color: var(--text-dim)">Junior Penetration Tester specializing in Active Directory & Red Teaming.</p>
+            <div class="intro-box">
+                <p>Hi!, I am just a <span class="highlight">Junior Penetration Tester</span> with nearly 2 years of professional experience.</p>
+                <p class="philosophy">"I feel like a small dot in the cybersecurity universe... that is why I never stop moving."</p>
+            </div>
         </section>
 
         <section id="certs">
-            <h2 style="font-family: 'JetBrains Mono'; font-size: 1.2rem; color: var(--primary); margin-bottom: 2rem;">> CERT_LOG</h2>
+            <h2>> TYPE C:/CERTIFICATION_LOG.txt</h2>
             <div id="timeline-data" class="timeline"></div>
 
             <div class="stats-box">
-                <span class="stat-label" style="margin-bottom: 10px;">Total Investment</span>
+                <p style="font-family: 'JetBrains Mono'; color: var(--text-dim); font-size: 0.8rem;">TOTAL INVESTMENT</p>
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <span id="total-usd" class="stat-val">$0</span>
                         <span class="stat-label">USD</span>
+                        <span id="total-usd" class="stat-val">$0</span>
                     </div>
                     <div class="stat-item">
-                        <span id="total-thb" class="stat-val">฿0</span>
                         <span class="stat-label">THB</span>
+                        <span id="total-thb" class="stat-val">฿0</span>
                     </div>
                 </div>
+                <p id="rate-display" style="font-size: 0.6rem; color: var(--text-dim); margin-top: 10px; opacity: 0.5;">Fetching live rate...</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Pattharadanai | Connection Secure</p>
+        <div class="footer-links">
+            <a href="mailto:pat.sanitjairak@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <div style="opacity: 0.3; font-size: 0.6rem;">&copy; 2026 Pattharadanai</div>
     </footer>
 
     <script>
         let globalUSD = 0, globalTHB = 0;
 
-        function animate(obj, end, prefix) {
-            let start = 0;
-            let duration = 1500;
+        function animateValue(obj, start, end, duration, prefix) {
             let startTimestamp = null;
             const step = (timestamp) => {
                 if (!startTimestamp) startTimestamp = timestamp;
                 const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                obj.innerText = prefix + Math.floor(progress * end).toLocaleString();
+                const currentVal = Math.floor(progress * (end - start) + start);
+                obj.innerHTML = prefix + currentVal.toLocaleString();
                 if (progress < 1) window.requestAnimationFrame(step);
             };
             window.requestAnimationFrame(step);
@@ -181,43 +211,47 @@
 
         async function init() {
             try {
-                // Fetch rate
-                const r = await fetch('https://open.er-api.com/v6/latest/USD');
-                const rd = await r.json();
-                const rate = rd.rates.THB || 35.0;
+                const rateRes = await fetch('https://open.er-api.com/v6/latest/USD');
+                const rateData = await rateRes.json();
+                const thbRate = rateData.rates.THB || 35.0;
+                document.getElementById('rate-display').innerText = `Live Rate: 1 USD = ${thbRate.toFixed(2)} THB`;
 
-                // Load Certs
-                const c = await fetch('certs.json');
-                const certs = await c.json();
+                const certRes = await fetch('certs.json');
+                const certs = await certRes.json();
                 
-                let html = certs.map(item => {
-                    globalUSD += parseFloat(item.cost.replace(/[^0-9.]/g, '')) || 0;
-                    return `<div class="cert-item">
-                        <div class="icon-sq"><img src="${item.icon}"></div>
-                        <div>
-                            <div class="stat-label" style="color:var(--accent)">${item.date}</div>
-                            <div style="font-weight:600; font-size:0.9rem;">${item.title}</div>
-                        </div>
-                    </div>`;
+                let certHtml = certs.map(cert => {
+                    globalUSD += parseFloat(cert.cost.replace(/[^0-9.]/g, '')) || 0;
+                    return `
+                        <div class="cert-item">
+                            <div class="icon-sq"><img src="${cert.icon}" alt="badge"></div>
+                            <div class="cert-content">
+                                <div class="cert-title">${cert.title}</div>
+                                <div class="cert-meta">${cert.date} | ${cert.cost}</div>
+                                <p style="color: var(--text-dim); font-size: 0.85rem;">${cert.desc}</p>
+                            </div>
+                        </div>`;
                 }).join('');
 
-                html += `<div class="cert-item" style="border-style:dashed; opacity:0.6">
-                    <div class="icon-sq" style="display:flex; align-items:center; justify-content:center;"><i class="fa-solid fa-hourglass-start"></i></div>
-                    <div><div style="font-weight:600; font-size:0.9rem;">TO BE CONTINUED</div><div class="stat-label">Saving Money...</div></div>
-                </div>`;
+                certHtml += `<div class="cert-item future"><div class="icon-sq"><i class="fa-solid fa-code" style="color:var(--primary)"></i></div><div class="cert-content"><div class="cert-title">TO BE CONTINUED...</div><p style="color:var(--text-dim); font-size:0.85rem;">Saving for next challenge.</p></div></div>`;
+                
+                document.getElementById('timeline-data').innerHTML = certHtml;
+                globalTHB = globalUSD * thbRate;
 
-                document.getElementById('timeline-data').innerHTML = html;
-                globalTHB = globalUSD * rate;
-
-                const obs = new IntersectionObserver((entries) => {
+                const observer = new IntersectionObserver((entries) => {
                     if (entries[0].isIntersecting) {
-                        animate(document.getElementById('total-usd'), globalUSD, '$');
-                        animate(document.getElementById('total-thb'), globalTHB, '฿');
+                        animateValue(document.getElementById('total-usd'), 0, globalUSD, 1500, '$');
+                        animateValue(document.getElementById('total-thb'), 0, globalTHB, 1500, '฿');
                     }
-                });
-                obs.observe(document.querySelector('.stats-box'));
+                }, { threshold: 0.5 });
+                observer.observe(document.querySelector('.stats-box'));
 
-            } catch (err) { console.error(err); }
+                // Navigation logic
+                document.getElementById('nav-certs').onclick = () => setTimeout(() => {
+                    animateValue(document.getElementById('total-usd'), 0, globalUSD, 1500, '$');
+                    animateValue(document.getElementById('total-thb'), 0, globalTHB, 1500, '฿');
+                }, 600);
+
+            } catch (e) { console.error(e); }
         }
         init();
     </script>
